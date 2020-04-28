@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    grid-area: foot;
+    flex-direction: row;
+    font-style: italic;
+}
+
+.fa {
+    display: flex;
+    font-family: FontAwesome;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #89D5D2;
+}
+
+a:hover {
+    color: black;
+}

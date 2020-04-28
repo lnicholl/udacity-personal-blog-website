@@ -1,0 +1,210 @@
+@import "subscribe.css";
+@import "footer.css";
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30vw 10vw auto auto auto auto 5vw;
+    grid-gap: 5px;
+    grid-template-areas:
+    "head"
+    "nav"
+    "cont1"
+    "cont2"
+    "side"
+    "sub"
+    "foot";
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+nav li {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffe4;
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 60px auto auto auto 30px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "head head head"
+        "nav nav nav"
+        "cont1 cont1 side"
+        "cont2 cont2 side"
+        "sub sub sub"
+        "foot foot foot";
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px;
+    }
+
+    nav li {
+        text-align: center;
+        display: inline-block;
+        margin: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffe4;
+        font-size: 20px;
+    }
+}
+    
+@media (min-width:901px) {    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 60px auto auto auto 30px;
+        grid-gap: 15px;
+        grid-template-areas:
+        "head head head"
+        "nav nav nav"
+        "cont1 cont1 side"
+        "cont2 cont2 side"
+        "sub sub sub"
+        "foot foot foot";
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 75px;
+    }
+
+    nav li {
+        text-align: center;
+        display: inline-block;
+        margin: 50px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffe4;
+        font-size: 20px;
+    }
+}   
+
+body {
+    font-family: 'Avenir';
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.box-gradient {
+    background-color: black;
+    opacity: 50%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    padding: 0px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #89D5D2;
+    color: #ffffe4;
+}
+
+#navbar {
+    grid-area: nav;
+    background-color: #89D5D2;
+}
+
+nav a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    grid-area: head;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+#content-1 {
+    grid-area: cont1;
+    background-image: url("../images/how-to-stay-motivated-during-quarantine.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: #ffffe4;
+}
+
+#content-2 {
+    grid-area: cont2;
+    background-image: url("../images/exercises-you-can-do-at-home.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #ffffe4;
+}
+
+#sidebar {
+    grid-area: side;
+    padding: 5px;
+    text-align: center;
+}
+
+.sidebar-content {
+    background-image: url("../images/recent-blog-posts.jpg");
+    background-size: contain;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #89D5D2;
+}
+
+.sidebar-content h2 {
+    text-decoration: underline;
+}
