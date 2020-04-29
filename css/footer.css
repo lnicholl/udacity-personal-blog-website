@@ -3,7 +3,6 @@
     justify-content: center;
     grid-area: foot;
     flex-direction: row;
-    font-style: italic;
 }
 
 .fa {
